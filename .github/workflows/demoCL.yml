@@ -38,7 +38,7 @@ jobs:
     - name: Begin Pytest
       run: |
         ls
-        mv .
+        mv ./test_increment1.py
         pytest --cov -v --junitxml=report.xml
         
     - if: ${{failure()}}       
