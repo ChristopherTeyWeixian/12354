@@ -29,7 +29,7 @@ jobs:
       with:
         repository: teyzx123/Private_SimpCity
         path: tests
-        token: ${{ secrets.QA }}
+        token: ${{ secrets.ABC }}
     - name: Linter Check with Flake8
       run: |
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
