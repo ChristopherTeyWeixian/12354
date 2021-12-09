@@ -28,7 +28,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: ChristopherTeyWeixian/Private_123
-        path: tests
+        path: .
         token: ${{ secrets.ABC }}
     - name: Linter Check with Flake8
       run: |
@@ -38,7 +38,7 @@ jobs:
     - name: Begin Pytest
       run: |
         ls
-        mv ./
+        mv .
         pytest --cov -v --junitxml=report.xml
         
     - if: ${{failure()}}       
