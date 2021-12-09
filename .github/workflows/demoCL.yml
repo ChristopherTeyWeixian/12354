@@ -38,7 +38,7 @@ jobs:
     - name: Begin Pytest
       run: |
         ls
-        mv ./tests/*.* ./
+        mv ./tests/
         pytest --cov -v --junitxml=report.xml
         
     - if: ${{failure()}}       
