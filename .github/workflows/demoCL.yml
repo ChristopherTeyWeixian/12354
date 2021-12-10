@@ -38,6 +38,8 @@ jobs:
     - name: Begin Pytest
       run: |
         ls
+        cd data
+        ls
         mv ./tests/*.* ./
         pytest --cov -v --junitxml=report.xml
         
