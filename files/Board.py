@@ -47,3 +47,9 @@ class Board(object):
     def Next_Turn(self):
         self.turn += 1
         return self.turn
+    
+    def display_board(self):
+        for items in self.board:
+            for item in items:
+                print(item, end =" ")
+            print("")
