@@ -47,5 +47,9 @@ def game_menu(currentBoard):
 
     return option
 
-
+def display_board(currentBoard):
+    for items in currentBoard.board:
+        for item in items:
+            print(item, end =" ")
+        print("")
     
