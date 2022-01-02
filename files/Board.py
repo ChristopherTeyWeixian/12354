@@ -11,12 +11,12 @@ class Board(object):
         try:
             # adds_line is needed as "\b" is counted as a functionality in python
             # thus a roundabout way was used instead of just changing the file name
-            adds_line = "\\q"
+            adds_line = "\q"
             adds_line = adds_line.replace("q", "")
 
             # current file path not+ \..\data\baseboard.xlxs
             # python files is different location as data files
-            path = str(pathlib.Path(__file__).parent.resolve()) + "\\.." + adds_line + "data" + adds_line + "base_board.xlsx"
+            path = str(pathlib.Path(__file__).parent.resolve()) + "\.." + adds_line + "data" + adds_line + "base_board.xlsx"
     #        print(path)
 
             # loads the excel file of path
