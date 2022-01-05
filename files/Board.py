@@ -28,7 +28,6 @@ class Board(object):
                 temp_list = []
                 for y in range(1, sheet_obj.max_column + 1):
                     cell_obj = sheet_obj.cell(row = x, column = y).value
-                    print(cell_obj)
                     if cell_obj == "e":
                         cell_obj = cell_obj.replace("e", " ")
                     temp_list.append(cell_obj)
