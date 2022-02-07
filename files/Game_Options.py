@@ -7,7 +7,7 @@ def place_building(currentBoard, building, option):
     row_table = [1, 2, 3, 4]
 
     if len(option) == 2 and option[0].isalpha()==True and option[1].isnumeric() ==True:
-        
+        #####
         #Check column
         if option[0].lower() not in column_table:
             column_coord = None
