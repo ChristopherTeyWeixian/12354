@@ -24,9 +24,9 @@ jobs:
     - name: Checkout private repo remotely
       uses: actions/checkout@v2
       with:
-        repository: teyzx123/Private_SimpCity
+        repository: ChristopherTeyWeixian/Private_123
         path: tests
-        token: ${{ secrets.QA_REMOTE }}
+        token: ${{ secrets.ABC }}
     
     - name: Linter Check with Flake8
       run: |
